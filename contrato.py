@@ -9,7 +9,7 @@ class ProdutoEnum(str, Enum):
     produto2 = "Travesso Destino"
     produto3 = "Destino de amar"
 
-Class Vendas(BaseModel):
+class Vendas(BaseModel):
 
     """
     Modelo de dados para as vendas.
