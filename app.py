@@ -3,6 +3,8 @@ from contrato import Vendas
 from datetime import datetime, time
 from pydantic import ValidationError
 from database import salvar_no_postgres
+from contrato import Vendas, ProdutoEnum
+
 
 def main():
 
@@ -12,7 +14,7 @@ def main():
     hora = st.time_input("Hora da compra", value= time(9,0))
     valor = st.number_input("Valor da venda", min_value=0.0, format="%.2f")
     quantidade = st.number_input("Quantidade de produtos", min_value=1, step=1)
-    produto = st.selectbox("Produto", options=["Destino Complexo", "Travesso Destino", "Destino de amar"])
+    produto = st.selectbox("Produto", options=list(ProdutoEnum),format_func=lambda x: x.value)
 
     if st.button("Salvar"):
 

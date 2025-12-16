@@ -29,4 +29,5 @@ class Vendas(BaseModel):
     data: datetime
     valor: PositiveFloat
     produto : ProdutoEnum
+    quantidade: PositiveInt 
 
