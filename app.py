@@ -8,6 +8,8 @@ from contrato import Vendas, ProdutoEnum
 
 def main():
 
+    st.write("VERSAO:", "2025-quantidade-fix")
+
     st.title("Sistema de CRM e Vendas")
     email = st.text_input("Campo de texto para inserção do email do vendedor")
     data = st.date_input("Data da compra", datetime.now())
