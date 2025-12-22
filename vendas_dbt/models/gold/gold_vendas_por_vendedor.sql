@@ -25,3 +25,4 @@ FROM
     vendas_7_dias_vendedor
 ORDER BY 
     data ASC, vendedor ASC
+    
